@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>day5 | 侯老师</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="第5天课程笔记1.对象​    对象是类的实例化，但es5中没类的概念。在es5中用构造函数实现类的定义。​    对象是由属性和方法组成的，它属于引用类型。2.对象分类​    内置对象和用户自定义对象​    内置对象：String&#x2F;Math&#x2F;Date&#x2F;Function….3.基本数据类型与引用数据类型的区别​    基本数据类型：number string boolean undefined">
+<meta property="og:type" content="article">
+<meta property="og:title" content="day5">
+<meta property="og:url" content="http://yoursite.com/2020/03/17/day5/index.html">
+<meta property="og:site_name" content="侯老师">
+<meta property="og:description" content="第5天课程笔记1.对象​    对象是类的实例化，但es5中没类的概念。在es5中用构造函数实现类的定义。​    对象是由属性和方法组成的，它属于引用类型。2.对象分类​    内置对象和用户自定义对象​    内置对象：String&#x2F;Math&#x2F;Date&#x2F;Function….3.基本数据类型与引用数据类型的区别​    基本数据类型：number string boolean undefined">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-17T02:57:09.260Z">
+<meta property="article:modified_time" content="2020-03-17T02:56:19.176Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="侯老师" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">侯老师</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">-- 技术博客</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-day5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/17/day5/" class="article-date">
+  <time datetime="2020-03-17T02:57:09.260Z" itemprop="datePublished">2020-03-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      day5
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="第5天课程笔记"><a href="#第5天课程笔记" class="headerlink" title="第5天课程笔记"></a>第5天课程笔记</h1><p>1.对象<br>​    对象是类的实例化，但es5中没类的概念。在es5中用构造函数实现类的定义。<br>​    对象是由属性和方法组成的，它属于引用类型。<br>2.对象分类<br>​    内置对象和用户自定义对象<br>​    内置对象：String/Math/Date/Function….<br>3.基本数据类型与引用数据类型的区别<br>​    基本数据类型：number string boolean undefined null<br>​    引用数据类型: object<br>​    区别：<br>​    　　基本类型和引用类型，都是数据类型；<br>​    　　数据的值都存储在内存中；<br>​    　　程序在运行时，会把内存划分不同区域，其中最重要的两个区域，是栈和堆。<br>​    　　栈中的值占用空间固定，而堆中是动态分配的内存；<br>​    　　所有的变量都存储在栈<br>​    　　基本数据类型的值直接存储在栈中，而引用类型的值存储在堆中，变量只是一个指向堆内存的地址引用。<br>4.用户自定义对象定义并赋值<br>​    1）new<br>​        方法1：<br>​            var obj = new Object();<br>​            obj.name = ‘张三’<br>​            obj.age = 18<br>​            obj.fn = function(){<br>​                …<br>​            }<br>​        方法2（不推荐）：<br>​            var obj = new Object({name:’Tom’,tel:’1379080900’});<br>​    2）字面量<br>​        方法1：<br>​            var obj = {}<br>​            obj.name = ‘张三’<br>​            obj.age = 18<br>​            obj.fn = function(){<br>​                …<br>​            }<br>​        方法2：<br>​            var obj ={<br>​                name:’Tom’,<br>​                tel:’1379080900’,<br>​                fn: function(){<br>​                    …<br>​                }<br>​            };</p>
+<pre><code>注意：
+    对象的属性和方法是以键值对的形式呈现，中间用冒号隔开，以逗号结束，最后一项不用加逗号。</code></pre><p>5.String对象<br>​    用来生成一个字符串。<br>​    用法：<br>​        new String()<br>​        或：<br>​            new String(‘abc’)<br>6.字符串属性<br>​    length:字符串长度<br>7.字符串常用方法<br>​    1）charAt(下标):返回指定下标所对应的字符。如果下标越界，则返回空字符串<br>​    2）indexOf(字符串[,下标]):返回指定字符串所在下标；如果有第二个参数，则表示从指定位置查找指定的字符串，找到返回下标，没找到返回空串<br>​    3）lastIndexOf(字符串[,下标]):返回一个指定的字符串值最后出现的位置，在一个字符串中的指定位置从后向前搜索<br>​    4）replace(字符串1或正则表达式，字符串2):字符串中用字符串2替换字符串1或按正则要求替换<br>​    5）substr(下标[,长度]):从指定下标开始截取指定长度的字符。如果没长度，表示从指定下标开始截取到最后<br>​    6）substring(下标1[,下标2]):从下标1截取到下标2之前，不包含下标2的内容，如果没下标2，表示从指定下标开始截取到最后<br>​    7）toLowerCase():把字符串转换为小写<br>​    8）toUpperCase():把字符串转换为大写<br>​    9）charCodeAt(下标):返回在指定的位置的字符的 Unicode 编码。<br>​    10）fromCharCode(数值列表):将数值（ Unicode 编码）转换为所对应的字符。<br>8.Number对象<br>​    用来定义一个数值对象。<br>​    方法：<br>​        toFixed(小数位数):把数字转换为字符串，结果的小数点后有指定位数的数字。<br>9.Math对象<br>​    使用Math对象的属性和方法时，前面的Math不能省略。<br>​    1）属性<br>​        PI<br>​    2）方法<br>​        abs：求绝对值<br>​        pow：幂函数<br>​        sqrt：平方根函数<br>​        round：四舍五入取整函数<br>​        ceil：向上取整函数（天花板函数）(取一个大于或等于原数的一个最小整数）<br>​        floor：向下取整函数（地板函数）(取一个小于或等于原数的一个最大整数）<br>​        random：随机函数（返回[0,1)之间的随机小数）<br>​            Math.random(n):中的n表示随机种子。<br>​        min：取最小值函数<br>​        max：取最大值函数<br>10.Date对象<br>​    方法：<br>​        getFullYear()</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/17/day5/" data-id="ck7vb49zz0001skib7tz483xt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/03/17/day6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          day6
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/03/17/day6/">day6</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/17/day5/">day5</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
